@@ -17,8 +17,5 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: Install pytest
-        run: pip install pytest
-
-      - name: Run tests
-        run: pytest
+      - name: Run unittests
+        run: python -m unittest test_website.py
